@@ -1,0 +1,51 @@
+{
+    "name": "dengrocrm/social-dengro",
+    "description": "DenGro integration for Social",
+    "version": "1.0.0",
+    "type": "craft-plugin",
+    "keywords": [
+        "dengro",
+        "social",
+        "craftcms"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dukt",
+            "homepage": "https://dukt.net/"
+        },
+        {
+            "name": "DenGro",
+            "homepage": "https://www.dengro.com/"
+        }
+    ],
+    "support": {
+        "email": "support@dengro.com",
+        "issues": "https://github.com/dengrocrm/social-dengro/issues?state=open",
+        "source": "https://github.com/dengrocrm/social-dengro",
+        "docs": "https://github.com/dengrocrm/social-dengro",
+        "rss": "https://github.com/dengrocrm/social-dengro/commits/v3.atom"
+    },
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "dukt/social": "^2.0.0-beta.10",
+        "dengrocrm/oauth2-dengro": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dengro\\social\\dengro\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "name": "Social DenGro",
+        "handle": "social-dengro",
+        "changelogUrl": "https://raw.githubusercontent.com/dengrocrm/social-dengro/v3/CHANGELOG.md",
+        "downloadUrl": "https://github.com/dengrocrm/social-dengro/archive/v1.zip"
+    }
+}
