@@ -1,6 +1,23 @@
 # Changelog
 All Notable changes to `social-dengro` will be documented in this file
 
+## 1.0.3 - 2019-01-21
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Fixed
+- Incorrect file name for SVG
+
+### Removed
+- Nothing
+
+### Security
+- Nothing
+
 ## 1.0.2 - 2019-01-21
 
 ### Added

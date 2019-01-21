@@ -1,7 +1,7 @@
 {
     "name": "dengrocrm/social-dengro",
     "description": "DenGro integration for Social",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "type": "craft-plugin",
     "keywords": [
         "dengro",
