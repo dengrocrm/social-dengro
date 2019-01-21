@@ -13,6 +13,14 @@ use dukt\social\base\LoginProvider;
  */
 class Dengro extends LoginProvider
 {
+    /**
+     * Get base URL for the ID server (allows for testing etc)
+     */
+    protected function getBaseUrl()
+    {
+        return Craft::$app->config->general->socialDengroBaseUrl;
+    }
+    
     // Public Methods
     // =========================================================================
 
@@ -45,7 +53,7 @@ class Dengro extends LoginProvider
      */
     public function getScopeDocsUrl()
     {
-        return 'https://id.dengro.com/oauth/scopes';
+        return $this->getBaseUrl().'/oauth/scopes';
     }
 
     /**
@@ -54,7 +62,11 @@ class Dengro extends LoginProvider
     public function getOauthProvider(): \Dengro\OAuth2\Client\Provider\Dengro
     {
         $config = $this->getOauthProviderConfig();
-
+    
+        if ($this->getBaseUrl()) {
+            $config['options']['baseUrl'] = $this->getBaseUrl();
+        }
+        
         return new \Dengro\OAuth2\Client\Provider\Dengro($config['options']);
     }
 
