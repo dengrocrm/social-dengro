@@ -86,9 +86,9 @@ class Dengro extends LoginProvider
     public function getDefaultUserFieldMapping(): array
     {
         return [
-            'id' => '{{ profile.id }}',
-            'username' => '{{ profile.email }}',
-            'email' => '{{ profile.email }}',
+            'id' => '{{ profile.getId() }}',
+            'username' => '{{ profile.getEmail() }}',
+            'email' => '{{ profile.getEmail() }}',
         ];
     }
     

@@ -1,6 +1,23 @@
 # Changelog
 All Notable changes to `social-dengro` will be documented in this file
 
+## 1.0.4 - 2019-02-11
+
+### Added
+- Nothing
+
+### Deprecated
+- Nothing
+
+### Fixed
+- getDefaultUserFieldMapping use correct methods
+
+### Removed
+- Nothing
+
+### Security
+- Nothing
+
 ## 1.0.3 - 2019-01-21
 
 ### Added
